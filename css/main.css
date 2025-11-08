@@ -1,0 +1,163 @@
+.hidden{
+    display:none;
+}
+
+/* General Rules */
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:black;
+    /* text colour */
+    color:white;
+}
+
+/* Main Header */
+
+header{
+    background-color:#ed1b24;
+    /* padding-top:10px;
+    padding-bottom:10px;
+    padding-left:0;
+    padding-right:0; */
+
+    /* SHORTHAND top right bottom left */
+    padding: 10px 0;
+}
+
+#main-logo{
+    display:block;
+    width:300px;
+    /* margin top and bottom 0 left and right auto, auto means equal, centers it */
+    margin:0 auto;
+}
+
+/* Character Nav */
+
+#character-nav{
+    background-color: #675050;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url(../images/characters_bg.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+#characters{
+    list-style-type: none;
+    padding:0; 
+    /* puts images in center */
+    text-align: center;
+}
+
+/* decendent selector, puts images horizontal */
+#characters li {
+    display: inline;
+    margin:10px;
+}
+
+#characters li img {
+    border: solid 1px white;
+    padding: 10px;
+    background-color:black;
+    box-shadow: 0px 0px 10px 0 rgba(255,255,255,0.9);
+    /* apply to normal state */
+    transition: all .5s ease-in-out;
+}
+
+#characters li a {
+    text-decoration: none;
+}
+
+#characters li img:hover {
+    filter: grayscale(100%);
+    border-radius: 50%;
+}
+
+#instructions {
+    padding: 20px;
+    text-align: center;
+}
+
+#instructions h3{
+    font-size:32px;
+    /* text-align: center; */
+}
+
+#instructions p {
+    font-size: 18px;
+    /* text-align: center; */
+}
+
+#main-footer {
+    height: 80px;
+    background-color: rgb(40, 37, 37);
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* LightBox rules */
+
+.lightbox {
+    width:100vw;
+    height:100vh;
+    /* taking out of normal flow */
+    position:absolute; 
+    /* positioning */
+    top:0;
+    left:0;
+    /* so it appears on top, think photoshop layers */
+    z-index: 2;
+    /* last value sets transparency */
+    background-color: rgba(0,0,0,0.85);
+    /* lighbox by default is invisible */
+    display:none;
+    /* applied here so it applies to all */
+    background-repeat:no-repeat;
+    /* 55% of viewport height */
+    background-size: 55vh;
+    /* 40px from left hand side */
+    background-position: 40px bottom;
+}
+
+.lightbox:target {
+    /* becomes visible when you target */
+    display: block;
+}
+
+#lightbox1 {
+    /* ../ to get into root directory */
+    background-image: url(../images/Cap_LB_Bg.png);
+}
+
+#lightbox3 {
+    background-image: url(../images/Thor_LB_Bg.png);
+}
+
+.lightbox-close {
+    color:white;
+    font-size:50px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 98vw;
+    transition: all .5s ease-in-out;
+}
+
+.lightbox-close:hover {
+    color:red;
+}
+
+.lightbox section {
+    width: 600px;
+    margin-left: 40%;
+    margin-top: 50px;
+}
+
+.lb-heading {
+    font-size: 32px;
+}
+
+.lightbox p {
+    /* couples resort!!! */
+    line-height: 30px;
+}

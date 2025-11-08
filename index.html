@@ -2,10 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>CSS Character Build</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <header>
+        <h1 class="hidden">All about the team</h1>
+        <!-- <img src="images/logo.svg" alt="Marvel Comics Logo" id="main-logo"> -->
+    </header>
+
+    <main>
+        <nav id="character-nav">
+            <h2 class="hidden">Main Navigation</h2>
+            <ul id="characters">
+                <li>
+                    <a href="#lightbox1">
+                        <!-- <img src="images/cap.png" alt="Captain America"> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#lightbox2">
+                        <!-- <img src="images/hulk.png" alt="The Hulk"> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#lightbox3">
+                        <!-- <img src="images/thor.png" alt="Thor"> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#lightbox4">
+                        <!-- <img src="images/widow.png" alt="The Black Widow"> -->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <section id="instructions">
+            <h3>Choose your Lord!</h3>
+            <p>Use your mouse to hover/click to discover more about each Fire Emblem: Three Houses character.</p>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <p>All Images &copy; Nintendo</p>
+    </footer>
+
+    <!-- Code for the lightboxes -->
+
+    <!-- changed from section to divs bc no natrually occurring headings -->
+    <div class="lightbox" id="lightbox1">
+        <a href="" class="lightbox-close">x</a>
+        <section>
+            <h2 class="lb-heading">Captain America - The First Avenger</h2>
+            <p class="lb-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur fugiat fuga perferendis, et reprehenderit facere, voluptatem nemo est non eius autem recusandae amet distinctio molestias. Quasi eos velit iusto! Perferendis!</p>
+        </section>
+    </div>
+
+    <div class="lightbox" id="lightbox2">
+        <a href="" class="lightbox-close">x</a>
+        <section>
+            <h2 class="lb-heading">The Hulk - </h2>
+            <p class="lb-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur fugiat fuga perferendis, et reprehenderit facere, voluptatem nemo est non eius autem recusandae amet distinctio molestias. Quasi eos velit iusto! Perferendis!</p>
+        </section>
+    </div>
+
+    <div class="lightbox" id="lightbox3">
+        <!-- anchor set to empty string sends you back to index/gets rid of fragment url identifier -->
+        <a href="" class="lightbox-close">x</a>
+        <section>
+            <h2 class="lb-heading">Thor Odinson - The Asguardian</h2>
+            <p class="lb-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur fugiat fuga perferendis, et reprehenderit facere, voluptatem nemo est non eius autem recusandae amet distinctio molestias. Quasi eos velit iusto! Perferendis!</p>
+        </section>
+    </div>
+
+    <div class="lightbox" id="lightbox4">
+        <a href="" class="lightbox-close">x</a>
+        <section>
+            <h2 class="lb-heading">Black Widow - </h2>
+            <p class="lb-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur fugiat fuga perferendis, et reprehenderit facere, voluptatem nemo est non eius autem recusandae amet distinctio molestias. Quasi eos velit iusto! Perferendis!</p>
+        </section>
+    </div>
     
 </body>
 </html>
