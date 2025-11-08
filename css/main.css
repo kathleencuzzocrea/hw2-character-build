@@ -95,3 +95,69 @@ header{
     padding: 20px 0;
     text-align: center;
 }
+
+/* LightBox rules */
+
+.lightbox {
+    width:100vw;
+    height:100vh;
+    /* taking out of normal flow */
+    position:absolute; 
+    /* positioning */
+    top:0;
+    left:0;
+    /* so it appears on top, think photoshop layers */
+    z-index: 2;
+    /* last value sets transparency */
+    background-color: rgba(0,0,0,0.85);
+    /* lighbox by default is invisible */
+    display:none;
+    /* applied here so it applies to all */
+    background-repeat:no-repeat;
+    /* 55% of viewport height */
+    background-size: 55vh;
+    /* 40px from left hand side */
+    background-position: 40px bottom;
+}
+
+.lightbox:target {
+    /* becomes visible when you target */
+    display: block;
+}
+
+#lightbox1 {
+    /* ../ to get into root directory */
+    background-image: url(../images/Cap_LB_Bg.png);
+}
+
+#lightbox3 {
+    background-image: url(../images/Thor_LB_Bg.png);
+}
+
+.lightbox-close {
+    color:white;
+    font-size:50px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 98vw;
+    transition: all .5s ease-in-out;
+}
+
+.lightbox-close:hover {
+    color:red;
+}
+
+.lightbox section {
+    width: 600px;
+    margin-left: 40%;
+    margin-top: 50px;
+}
+
+.lb-heading {
+    font-size: 32px;
+}
+
+.lightbox p {
+    /* couples resort!!! */
+    line-height: 30px;
+}
