@@ -128,11 +128,27 @@ header{
 
 #lightbox1 {
     /* ../ to get into root directory */
-    background-image: url(../images/Cap_LB_Bg.png);
+    background-image: url(../images/byleths.png);
+    background-size:90vh;
+    background-repeat:no-repeat;
+}
+
+#lightbox2{
+    background-image: url(../images/edelgard.png);
+    background-size:90vh;
+    background-repeat:no-repeat;
 }
 
 #lightbox3 {
-    background-image: url(../images/Thor_LB_Bg.png);
+    background-image: url(../images/dimitri.png);
+    background-size:90vh;
+    background-repeat:no-repeat;
+}
+
+#lightbox4{
+    background-image: url(../images/claude.png);
+    background-size:75vh;
+    background-repeat:no-repeat;
 }
 
 .lightbox-close {
@@ -150,7 +166,7 @@ header{
 
 .lightbox section {
     width: 600px;
-    margin-left: 40%;
+    margin-left: 50%;
     margin-top: 50px;
 }
 
@@ -161,4 +177,25 @@ header{
 .lightbox p {
     /* couples resort!!! */
     line-height: 30px;
+}
+
+.quote {
+    font-style:italic;
+}
+
+/* changing images on hover for lore accuracy hehe */
+#byleth img:hover {
+    content: url(../images/mbyleth-resized.png);
+}
+
+#edelgard img:hover {
+    content: url(../images/skip-edel-resized.png);
+}
+
+#dimitri img:hover {
+    content: url(../images/skip-dimi-resized.png);
+}
+
+#claude img:hover {
+    content:url(../images/skip-claude-resized.png);
 }
