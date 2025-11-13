@@ -5,7 +5,7 @@
 /* General Rules */
 
 body {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     background-color:black;
     /* text colour */
     color:white;
@@ -35,8 +35,8 @@ header{
 
 #character-nav{
     background-color: #675050;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-image: url(../images/fe-background.jpg);
     background-repeat:no-repeat;
     background-size: cover;
@@ -183,7 +183,7 @@ header{
     font-style:italic;
 }
 
-/* changing images on hover for lore accuracy hehe */
+/* changes for individual character boxes */
 #byleth img:hover {
     content: url(../images/mbyleth-resized.png);
 }
