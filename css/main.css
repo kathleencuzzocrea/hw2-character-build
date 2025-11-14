@@ -15,8 +15,6 @@ body {
 
 header{
     background-color:rgb(167, 157, 227);
-
-    /* SHORTHAND top right bottom left */
     padding: 10px 0;
 }
 
@@ -178,7 +176,6 @@ header{
 }
 
 .lightbox p {
-    /* couples resort!!! */
     line-height: 30px;
 }
 
